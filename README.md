@@ -14,3 +14,16 @@ This repository contains a simple static HTML page that displays a "Hello World"
 
 Retrofit the public directory with your own HTML, CSS, and JS.  
 
+## Clone LaunchDarkly SDKs + Relay Proxy
+
+This repo includes a helper script that discovers and clones LaunchDarkly SDK repositories (and the Relay Proxy) using the GitHub CLI.
+
+```bash
+# list what would be cloned
+scripts/clone-launchdarkly-sdks.sh --list
+
+# shallow-clone (default depth=1) into ./launchdarkly-repos/
+scripts/clone-launchdarkly-sdks.sh
+```
+
+
